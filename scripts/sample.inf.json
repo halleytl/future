@@ -1,0 +1,26 @@
+{
+  "name": "sample",
+  "description": "用来测试的接口",
+  "realtime": false,
+  "cache": 30,
+  "queries": [
+    {
+      "query": "sales.mysql.sql",
+      "output": "merge.py"
+    },
+    {
+      "query": "business_gi.es.sql",
+      "output": "merge.py"
+    }
+  ],
+  "pipelines": [
+    {
+      "pipeline": "merge.py",
+      "output": "cache.py"
+    },
+    {
+      "pipeline": "cache.py",
+      "output": null
+    }
+  ]
+}
