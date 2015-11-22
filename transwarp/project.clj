@@ -9,8 +9,10 @@
 
   :dependencies [[com.cemerick/piggieback "0.2.1"]
                  [org.clojure/tools.nrepl "0.2.10"]
+                 [clojure-watch "0.1.11"]
                  [org.clojure/clojure "1.7.0"]
                  [com.taoensso/timbre "4.1.4"]
+                 [com.github.kyleburton/clj-xpath "1.4.5"]
                  [org.clojure/clojurescript "1.7.122"]
                  [secretary "1.2.3"]
                  [jayq "2.5.4"]

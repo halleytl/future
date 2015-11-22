@@ -1,0 +1,35 @@
+{
+
+  "name": "sample",
+
+  "description": "用来测试的接口",
+  
+  // 是否是实时接口
+  "realtime": false,
+
+  // 非实时接口的缓存时间。
+  "cache": 30,
+
+  // 实时接口的间隔。
+  "interval": 30,
+
+  "queries": {
+    "sales.mysql.sql": {
+      "output": "merge.py"
+    }, 
+    "sample.inf.json": {
+
+    }
+  },
+
+  "pipelines": {
+    "merge.py": {
+      "pipeline": "merge.py",
+      "output": "cache.py"
+    },
+    "cache.py": {
+      "pipeline": "cache.py",
+      "output": null
+    }
+  }
+}

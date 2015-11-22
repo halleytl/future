@@ -1,0 +1,34 @@
+{
+  "name": "sample",
+
+  "realtime": true,
+
+  "interval": 30,
+
+  "ouput": "p1",
+
+  "query": {
+    "q3": {
+      "name": "Q3"
+    },
+    "q4": {
+      "name": "Q4",
+      "args": ["#sample2"]
+    }
+  },
+  
+  "pipe": {
+    "p1": {
+      "name": "merge",
+      "inputs": ["business_id", "p3", "q4"]
+    }, 
+    "p2": {
+      "name": "fix",
+      "inputs": ["q3"]
+    },
+    "p3": {
+      "name": "fix2",
+      "inputs": ["p2"]
+    }
+  }
+}

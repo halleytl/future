@@ -12,6 +12,6 @@ from
     inner join ecs_business_info as binfo using (business_id)
 where
     opay.pay_order_total > 1
-    and opay.pay_order_status = 1
+    and opay.pay_order_status = {pay_order_status}
     and opay.payedtime >= curdate()
 group by business_id
