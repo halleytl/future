@@ -1,6 +1,5 @@
-<i id="sample" realtime="false" cache="30">
-    <p id="sample">
-        <q id="sample">
-        </q>
-    </p>
-</i>
+<!-- 一个接口文档的例子 -->
+<pipeline id="sample">
+    <query id="sample">
+    </query>
+</pipeline>

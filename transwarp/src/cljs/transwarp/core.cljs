@@ -28,6 +28,12 @@
 
   (hook-browser-navigation!))
 
+(defn textInput
+  []
+  [:div
+   [:label "hello"]
+   [:input {:type "text"}]])
+
 (defn dashboard
   "dashboard页面"
   []

@@ -2,5 +2,5 @@
 
 (defn process
   "pipeline的例子"
-  [xs]
-  xs)
+  [data]
+  (map #(assoc % :hello "world") data))
